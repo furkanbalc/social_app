@@ -32,5 +32,30 @@
         "phone_number_is_too_short": "Phone number is too short!",
         "phone_number_is_too_long": "Phone number is too long!\n Enter without '0' at the beginning",
         "invalid_phone_number": "Invalid phone number!"
+    },
+    "auth": {
+      "signup": "Sign Up",
+      "signin": "Sign In",
+      "create_account": "Create Account",
+      "forgot_password": "Forgot Password",
+      "fill_your_info": "Fill out your information to register or try other methods",
+      "welcome_back": "Welcome back! You can continue where you left off by signing in",
+      "forgot_password_send_connection_link": "We need your registered email address to send the password reset link",
+      "or_with": "Or with",
+      "already_have_an_account": "Already have an account?",
+      "dont_have_an_account": "Don't have an account?",
+      "registration_conditions": "Registration conditions",
+      "i_have_read": "I have read, I accept."
+    },
+    "form_fields": {
+        "name": "First Name",
+        "surname": "Last Name",
+        "email": "Email",
+        "password": "Password",
+        "confirm_password": "Confirm Password",
+        "phone_number": "Phone Number",
+        "gender": "Gender",
+        "age": "Age",
+        "select": "Select"
     }
 }

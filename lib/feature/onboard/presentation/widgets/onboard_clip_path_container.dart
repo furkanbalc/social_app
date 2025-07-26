@@ -1,28 +1,14 @@
-import 'package:flutter/cupertino.dart';
-import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
-import 'package:social_app/common/widgets/text/custom_text.dart';
-import 'package:social_app/core/constants/constants.dart';
-import 'package:social_app/core/extensions/extensions.dart';
+part of '../views/onboard.dart';
 
-class OnboardClipPathContainer extends StatefulWidget {
-  const OnboardClipPathContainer({
-    super.key,
-    required this.index,
-    required this.title,
-    required this.subTitle,
-    required this.desc,
-  });
-  final int index;
-  final String title;
-  final String subTitle;
-  final String desc;
+class _OnboardClipPathContainer extends StatefulWidget {
+  const _OnboardClipPathContainer({required this.onBoardingModel});
+  final OnBoardingModel onBoardingModel;
 
   @override
-  State<OnboardClipPathContainer> createState() => _OnboardClipPathContainerState();
+  State<_OnboardClipPathContainer> createState() => _OnboardClipPathContainerState();
 }
 
-class _OnboardClipPathContainerState extends State<OnboardClipPathContainer> {
+class _OnboardClipPathContainerState extends State<_OnboardClipPathContainer> {
   @override
   Widget build(BuildContext context) {
     return ClipPath(
@@ -49,16 +35,16 @@ class _OnboardClipPathContainerState extends State<OnboardClipPathContainer> {
           text: TextSpan(
             children: [
               TextSpan(
-                text: '${widget.title} ',
+                text: '${widget.onBoardingModel.title} ',
                 style: context.textStyles.headlineSmall.copyWith(
-                  color: widget.index % 2 == 0 ? AppColors.rawSunset : AppColors.blackColor,
+                  color: widget.onBoardingModel.index % 2 == 0 ? AppColors.rawSunset : AppColors.blackColor,
                   fontWeight: FontWeight.w800,
                 ),
               ),
               TextSpan(
-                text: widget.subTitle,
+                text: widget.onBoardingModel.subTitle,
                 style: context.textStyles.headlineSmall.copyWith(
-                  color: widget.index % 2 == 0 ? AppColors.blackColor : AppColors.rawSunset,
+                  color: widget.onBoardingModel.index % 2 == 0 ? AppColors.blackColor : AppColors.rawSunset,
                   fontWeight: FontWeight.w800,
                 ),
               ),
@@ -67,7 +53,7 @@ class _OnboardClipPathContainerState extends State<OnboardClipPathContainer> {
         ),
         context.sizedBoxHeightLow1,
         CustomText(
-          widget.desc,
+          widget.onBoardingModel.desc,
           textAlign: TextAlign.center,
           style: context.textStyles.titleSmall.copyWith(
             color: AppColors.blackColor,

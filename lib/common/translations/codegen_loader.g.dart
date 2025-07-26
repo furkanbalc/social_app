@@ -47,6 +47,31 @@ class CodegenLoader extends AssetLoader{
     "phone_number_is_not_empty": "Telefon numarası boş olamaz!",
     "phone_number_is_too_short": "Telefon numarası çok kısa!",
     "invalid_phone_number": "Geçersiz telefon numarası!"
+  },
+  "auth": {
+    "signup": "Kayıt Ol",
+    "signin": "Giriş Yap",
+    "create_account": "Hesap Oluştur",
+    "forgot_password": "Şifremi Unuttum",
+    "fill_your_info": "Kayıt olmak için bilgilerinizi doldurun veya diğer yöntemleri deneyin",
+    "welcome_back": "Tekrar hoşgeldiniz, giriş yaparak kaldığınız yerden devam edebilirsiniz",
+    "forgot_password_send_connection_link": "Şifre sıfırlama bağlantısını gönderebilmemiz için hesabınıza kayıtlı e-posta adresinize ihtiyacımız var",
+    "or_with": "Veya",
+    "already_have_an_account": "Zaten bir hesabınız var mı?",
+    "dont_have_an_account": "Hesabınız yok mu?",
+    "registration_conditions": "Kayıt koşullarını",
+    "i_have_read": "okudum, kabul ediyorum."
+  },
+  "form_fields": {
+    "name": "Ad",
+    "surname": "Soyad",
+    "email": "E-posta",
+    "password": "Şifre",
+    "confirm_password": "Şifre Onay",
+    "phone_number": "Telefon Numarası",
+    "gender": "Cinsiyet",
+    "age": "Yaş",
+    "select": "Seçim"
   }
 };
 static const Map<String,dynamic> _en = {
@@ -83,6 +108,31 @@ static const Map<String,dynamic> _en = {
     "phone_number_is_too_short": "Phone number is too short!",
     "phone_number_is_too_long": "Phone number is too long!\n Enter without '0' at the beginning",
     "invalid_phone_number": "Invalid phone number!"
+  },
+  "auth": {
+    "signup": "Sign Up",
+    "signin": "Sign In",
+    "create_account": "Create Account",
+    "forgot_password": "Forgot Password",
+    "fill_your_info": "Fill out your information to register or try other methods",
+    "welcome_back": "Welcome back! You can continue where you left off by signing in",
+    "forgot_password_send_connection_link": "We need your registered email address to send the password reset link",
+    "or_with": "Or with",
+    "already_have_an_account": "Already have an account?",
+    "dont_have_an_account": "Don't have an account?",
+    "registration_conditions": "Registration conditions",
+    "i_have_read": "I have read, I accept."
+  },
+  "form_fields": {
+    "name": "First Name",
+    "surname": "Last Name",
+    "email": "Email",
+    "password": "Password",
+    "confirm_password": "Confirm Password",
+    "phone_number": "Phone Number",
+    "gender": "Gender",
+    "age": "Age",
+    "select": "Select"
   }
 };
 static const Map<String, Map<String,dynamic>> mapLocales = {"tr": _tr, "en": _en};

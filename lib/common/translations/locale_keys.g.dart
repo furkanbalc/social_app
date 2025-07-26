@@ -34,5 +34,28 @@ abstract class  LocaleKeys {
   static const validator_phone_number_is_too_short = 'validator.phone_number_is_too_short';
   static const validator_invalid_phone_number = 'validator.invalid_phone_number';
   static const validator = 'validator';
+  static const auth_signup = 'auth.signup';
+  static const auth_signin = 'auth.signin';
+  static const auth_create_account = 'auth.create_account';
+  static const auth_forgot_password = 'auth.forgot_password';
+  static const auth_fill_your_info = 'auth.fill_your_info';
+  static const auth_welcome_back = 'auth.welcome_back';
+  static const auth_forgot_password_send_connection_link = 'auth.forgot_password_send_connection_link';
+  static const auth_or_with = 'auth.or_with';
+  static const auth_already_have_an_account = 'auth.already_have_an_account';
+  static const auth_dont_have_an_account = 'auth.dont_have_an_account';
+  static const auth_registration_conditions = 'auth.registration_conditions';
+  static const auth_i_have_read = 'auth.i_have_read';
+  static const auth = 'auth';
+  static const form_fields_name = 'form_fields.name';
+  static const form_fields_surname = 'form_fields.surname';
+  static const form_fields_email = 'form_fields.email';
+  static const form_fields_password = 'form_fields.password';
+  static const form_fields_confirm_password = 'form_fields.confirm_password';
+  static const form_fields_phone_number = 'form_fields.phone_number';
+  static const form_fields_gender = 'form_fields.gender';
+  static const form_fields_age = 'form_fields.age';
+  static const form_fields_select = 'form_fields.select';
+  static const form_fields = 'form_fields';
 
 }

@@ -5,4 +5,5 @@ class _AppPng {
 
   String get phone => 'phone';
   String get ellipse => 'ellipse';
+  String get bubbles => 'bubbles';
 }

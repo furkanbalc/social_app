@@ -1,8 +1,11 @@
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:social_app/app.dart';
 import 'package:social_app/core/constants/app_constants.dart';
 import 'package:social_app/core/enums/app_languages.dart';
+import 'package:social_app/feature/onboard/presentation/viewmodels/onboard_viewmodel.dart';
+import 'package:social_app/feature/onboard/presentation/viewmodels/onboard_viewmodel_imp.dart';
 
 Future<void> main() async {
   /// If there is an asynchronous operation in the main block, this line should be added
@@ -30,7 +33,9 @@ Future<void> main() async {
 
       /// Location of language files
       path: AppConstants.languagesPath,
-      child: const MyApp(),
+      child: const ProviderScope(child: MyApp()),
     ),
   );
 }
+
+final onboardViewModelImp = ChangeNotifierProvider<OnboardViewModel>((ref) => OnboardViewModelImpl());

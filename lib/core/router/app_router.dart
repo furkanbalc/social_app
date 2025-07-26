@@ -1,6 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:go_router/go_router.dart';
 import 'package:social_app/core/router/router.dart';
+import 'package:social_app/feature/auth/presentation/views/login.dart';
+import 'package:social_app/feature/auth/presentation/views/register.dart';
 import 'package:social_app/feature/home/presentation/views/home.dart';
 import 'package:social_app/feature/onboard/presentation/views/onboard.dart';
 import 'package:social_app/feature/splash/presentation/views/splash.dart';
@@ -32,6 +34,18 @@ class AppRouter {
         name: AppRouteNames.home.name,
         path: AppRouteNames.home.path,
         builder: (context, state) => const HomeView(),
+        routes: [
+          GoRoute(
+            name: AppRouteNames.login.name,
+            path: AppRouteNames.login.path,
+            builder: (context, state) => const LoginView(),
+          ),
+          GoRoute(
+            name: AppRouteNames.register.name,
+            path: AppRouteNames.register.path,
+            builder: (context, state) => const RegisterView(),
+          ),
+        ],
       ),
     ],
   );

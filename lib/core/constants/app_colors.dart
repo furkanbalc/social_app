@@ -21,4 +21,10 @@ class AppColors {
 
   /// Color(0x00000000)
   static const Color transparentColor = Colors.transparent;
+
+  /// Color(0xFFF9622E)
+  static const Color redColor = Color(0xFFF9622E);
+
+  /// Color(0xFFACAFC3)
+  static const Color greyLight = Color(0xFFACAFC3);
 }
