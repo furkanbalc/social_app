@@ -3,9 +3,9 @@ part of '../views/register.dart';
 mixin RegisterMixin on ConsumerState<RegisterView> {
   late AuthViewModel authViewModel;
   final GlobalKey<FormState> formKey = GlobalKey<FormState>();
-  final TextEditingController userNameController = TextEditingController(text: 'Furkan');
-  final TextEditingController emailController = TextEditingController(text: 'test@gmail.com');
-  final TextEditingController passwordController = TextEditingController(text: '123456');
+  final TextEditingController userNameController = TextEditingController();
+  final TextEditingController emailController = TextEditingController();
+  final TextEditingController passwordController = TextEditingController();
 
   @override
   void initState() {

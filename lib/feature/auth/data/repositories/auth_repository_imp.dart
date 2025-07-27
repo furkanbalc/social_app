@@ -21,4 +21,16 @@ class AuthRepositoryImp implements AuthRepository {
     );
     return authResultModel.convertToEntity();
   }
+
+  @override
+  Future<AuthResultEntity> login({
+    required String email,
+    required String password,
+  }) async {
+    final AuthResultModel authResultModel = await authRemoteDatasource.login(
+      email: email,
+      password: password,
+    );
+    return authResultModel.convertToEntity();
+  }
 }

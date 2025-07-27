@@ -16,16 +16,20 @@ class AppUser extends AppUserEntity {
   }
 
   /// convert app user to json
-  Map<String, dynamic> toJson() => {
-        'id': id,
-        'username': username,
-        'email': email,
-      };
+  Map<String, dynamic> toJson() {
+    return {
+      'id': id,
+      'username': username,
+      'email': email,
+    };
+  }
 
   /// convert json to app user
-  factory AppUser.fromJson(Map<String, dynamic> json) => AppUser(
-        id: json['id'],
-        username: json['username'],
-        email: json['email'],
-      );
+  factory AppUser.fromJson(Map<String, dynamic> json) {
+    return AppUser(
+      id: json['id'],
+      username: json['username'],
+      email: json['email'],
+    );
+  }
 }

@@ -7,4 +7,10 @@ abstract class AuthRepository {
     required String email,
     required String password,
   });
+
+  /// Login function
+  Future<AuthResultEntity> login({
+    required String email,
+    required String password,
+  });
 }

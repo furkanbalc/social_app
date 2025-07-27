@@ -9,7 +9,7 @@ abstract class AuthRemoteDatasource {
   });
 
   /// Login function
-  Future<void> login({
+  Future<AuthResultModel> login({
     required String email,
     required String password,
   });

@@ -6,12 +6,24 @@ abstract class AuthViewModel extends ChangeNotifier {
   /// Register Response
   ApiResponse<AuthResultEntity> get registerResponse;
 
+  /// Login Response
+  ApiResponse<AuthResultEntity> get loginResponse;
+
   /// Register Response Setter
   set registerResponse(ApiResponse<AuthResultEntity> value);
+
+  /// Login Response Setter
+  set loginResponse(ApiResponse<AuthResultEntity> value);
 
   /// Register Function
   Future<void> register({
     required String username,
+    required String email,
+    required String password,
+  });
+
+  /// Login Function
+  Future<void> login({
     required String email,
     required String password,
   });

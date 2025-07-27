@@ -30,7 +30,7 @@ class AuthRemoteDatasourceImp implements AuthRemoteDatasource {
     );
 
     /// create a new user in the database
-    await usersCollection.doc(credential.user?.uid).set(user.toJson());
+    await usersCollection.doc(user.id).set(user.toJson());
 
     /// return the user
     return AuthSuccessModel(
@@ -41,10 +41,28 @@ class AuthRemoteDatasourceImp implements AuthRemoteDatasource {
   }
 
   @override
-  Future<void> login({
+  Future<AuthResultModel> login({
     required String email,
     required String password,
-  }) {
-    throw UnimplementedError();
+  }) async {
+    /// attempt to login with email and password
+    UserCredential credential = await _firebaseAuth.signInWithEmailAndPassword(
+      email: email,
+      password: password,
+    );
+
+    /// create a new user in the database
+    AppUser user = AppUser(
+      id: credential.user?.uid ?? '',
+      email: email,
+      username: '',
+    );
+
+    /// return user
+    return AuthSuccessModel(
+      isSuccess: true,
+      token: credential.user?.uid,
+      user: user,
+    );
   }
 }
