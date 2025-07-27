@@ -16,7 +16,7 @@ class _NextButton extends ConsumerWidget {
         } else {
           pageController.animateToPage(
             pageController.page!.toInt() + 1,
-            duration: const Duration(milliseconds: 300),
+            duration: Durations.medium2,
             curve: Curves.easeInOut,
           );
         }

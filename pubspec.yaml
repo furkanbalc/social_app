@@ -16,6 +16,9 @@ dependencies:
   # State Management
   flutter_riverpod: ^2.6.1
 
+  # Get It
+  get_it: ^8.0.3
+
   # Assets & Images
   flutter_svg: ^2.0.16
   lottie: ^3.2.0
@@ -30,6 +33,21 @@ dependencies:
   hive: ^2.2.3
   hive_flutter: ^1.1.0
   smooth_page_indicator: ^1.2.1
+
+
+  # Firebase
+  firebase_core: ^3.15.2
+  firebase_auth: ^5.7.0
+  cloud_firestore: ^5.6.12
+  firebase_analytics: ^11.6.0
+  firebase_crashlytics: ^4.3.10
+  firebase_storage: ^12.4.10
+
+  # Core
+  equatable: ^2.0.7
+
+  # UI
+  flutter_spinkit: ^5.2.1
 
 dev_dependencies:
   flutter_test:

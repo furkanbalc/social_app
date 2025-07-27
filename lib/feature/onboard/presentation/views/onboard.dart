@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
+import 'package:social_app/common/helpers/app_states.dart';
 import 'package:social_app/common/translations/locale_keys.g.dart';
 import 'package:social_app/common/widgets/button/custom_elevated_button.dart';
 import 'package:social_app/common/widgets/button/custom_text_button.dart';
@@ -17,7 +18,6 @@ import 'package:social_app/core/router/router.dart';
 import 'package:social_app/feature/onboard/data/models/onboard_model.dart';
 import 'package:easy_localization/easy_localization.dart';
 import 'package:go_router/go_router.dart';
-import 'package:social_app/main.dart';
 part '../widgets/onboard_page_widget.dart';
 part '../widgets/background_circle.dart';
 part '../widgets/next_button.dart';
@@ -54,12 +54,7 @@ class _OnboardViewState extends ConsumerState<OnboardView> {
     return Stack(
       children: [
         /// Background Circle
-        const Positioned(
-          top: AppSizes.high3 * 5,
-          left: 0,
-          right: 0,
-          child: _BackgroundCircle(),
-        ),
+        const _BackgroundCircle(),
 
         /// Onboard Page View
         _OnboardPageView(pageController: _pageController),

@@ -9,6 +9,7 @@ class _OnboardPageView extends ConsumerWidget {
     final onboardViewModel = ref.watch(onboardViewModelImp);
     return PageView(
       controller: pageController,
+      physics: const NeverScrollableScrollPhysics(),
       onPageChanged: (index) {
         onboardViewModel.currentPage = index;
       },

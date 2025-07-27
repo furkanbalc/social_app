@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:social_app/common/widgets/loading/custom_loading_widget.dart';
 import 'package:social_app/core/enums/auth_method.dart';
 import 'package:social_app/core/extensions/context_padding.dart';
 import 'package:social_app/core/extensions/context_size.dart';
@@ -10,10 +11,12 @@ class AuthScaffold extends StatelessWidget {
     required this.body,
     this.isLoading = false,
     required this.authMethod,
+    required this.formKey,
   });
   final Widget body;
   final bool? isLoading;
   final AuthMethod authMethod;
+  final GlobalKey<FormState> formKey;
 
   @override
   Widget build(BuildContext context) {
@@ -30,6 +33,7 @@ class AuthScaffold extends StatelessWidget {
                 child: Padding(
                   padding: context.paddings.horizontalMedium1,
                   child: Form(
+                    key: formKey,
                     child: SingleChildScrollView(
                       keyboardDismissBehavior: ScrollViewKeyboardDismissBehavior.manual,
                       child: Column(
@@ -45,10 +49,7 @@ class AuthScaffold extends StatelessWidget {
             ],
           ),
         ),
-        if (isLoading == true)
-          const Center(
-            child: CircularProgressIndicator(),
-          ),
+        if (isLoading == true) const CustomLoadingWidget(),
       ],
     );
   }

@@ -23,10 +23,9 @@
         "password_not_null": "Password cannot be empty!",
         "password_min_character": "Password must contain at least 6 characters!",
         "passwords_same": "Passwords must match!",
-        "surname_is_not_empty": "Surname cannot be empty!",
-        "name_is_not_empty": "Name cannot be empty!",
-        "name_only_string": "Name must contain only letters!",
-        "sur_name_only_string": "Surname must contain only letters!",
+        "name_is_not_empty": "Name and surname cannot be empty!",
+        "name_only_str  ing": "Name and surname must contain only letters!",
+        "sur_name_only_string": "Name and surname must contain only letters!",
         "min_character": "Must contain at least 3 characters!",
         "phone_number_is_not_empty": "Phone number must contain at least 6 characters!",
         "phone_number_is_too_short": "Phone number is too short!",
@@ -57,5 +56,14 @@
         "gender": "Gender",
         "age": "Age",
         "select": "Select"
+    },
+    "messages": {
+        "creating_account": "Creating account ...",
+        "signing": "Signing in ...",
+        "sign_outing": "Signing out ...",
+        "email_already_in_use": "This email address is already in use. Try a different one.",
+        "user_not_found": "This email address is not registered. Try a different one.",
+        "wrong_password": "Incorrect password",
+        "wrong_email_or_password": "Incorrect email or password"
     }
 }

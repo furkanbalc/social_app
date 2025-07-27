@@ -38,12 +38,12 @@ class AppRouter {
           GoRoute(
             name: AppRouteNames.login.name,
             path: AppRouteNames.login.path,
-            builder: (context, state) => const LoginView(),
+            builder: (context, state) => LoginView(),
           ),
           GoRoute(
             name: AppRouteNames.register.name,
             path: AppRouteNames.register.path,
-            builder: (context, state) => const RegisterView(),
+            builder: (context, state) => RegisterView(),
           ),
         ],
       ),

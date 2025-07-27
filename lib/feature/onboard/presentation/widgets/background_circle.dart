@@ -5,12 +5,17 @@ class _BackgroundCircle extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      width: context.dynamicWidth(),
-      height: context.dynamicWidth(),
-      decoration: BoxDecoration(
-        color: AppColors.rawSunset.withOpacity(.1),
-        shape: BoxShape.circle,
+    return Positioned(
+      top: AppSizes.high3 * 5,
+      left: 0,
+      right: 0,
+      child: Container(
+        width: context.dynamicWidth(),
+        height: context.dynamicWidth(),
+        decoration: BoxDecoration(
+          color: AppColors.rawSunset.withOpacity(.1),
+          shape: BoxShape.circle,
+        ),
       ),
     );
   }

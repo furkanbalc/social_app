@@ -10,10 +10,11 @@ class _PageIndicator extends StatelessWidget {
       controller: controller,
       count: OnBoardingItems().onBoarditems.length,
       effect: const ExpandingDotsEffect(
+        spacing: AppSizes.low1,
         activeDotColor: AppColors.rawSunset,
         dotColor: AppColors.greyLight,
-        dotWidth: 12,
-        dotHeight: 12,
+        dotWidth: AppSizes.low3,
+        dotHeight: AppSizes.low3,
       ),
     );
   }

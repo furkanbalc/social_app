@@ -1,14 +1,8 @@
-import 'package:flutter/material.dart';
-import 'package:social_app/common/translations/locale_keys.g.dart';
-import 'package:social_app/common/widgets/button/custom_inkwell.dart';
-import 'package:social_app/common/widgets/text/custom_text.dart';
-import 'package:social_app/core/constants/app_colors.dart';
-import 'package:easy_localization/easy_localization.dart';
+part of '../views/register.dart';
 
-class TermAndConditionWidget extends FormField<bool> {
-  TermAndConditionWidget({
-    super.key,
-  }) : super(
+class _TermAndConditionWidget extends FormField<bool> {
+  _TermAndConditionWidget()
+      : super(
           initialValue: false,
           validator: (bool? value) => value == false ? '' : null,
           builder: (FormFieldState<bool> state) {

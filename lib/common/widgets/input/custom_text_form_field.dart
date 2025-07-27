@@ -78,8 +78,7 @@ class CustomTextFormField extends StatelessWidget {
             : Text(
                 labelText ?? '',
                 textAlign: TextAlign.left,
-                style:
-                    context.textStyles.titleSmall.copyWith(color: AppColors.blackColor, fontWeight: FontWeight.w600),
+                style: context.textStyles.titleSmall.copyWith(color: AppColors.blackColor, fontWeight: FontWeight.w600),
               ),
         context.sizedBoxHeightMin,
         TextFormField(
